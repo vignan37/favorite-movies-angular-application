@@ -1,0 +1,21 @@
+<div class="login-container">
+
+    <div class="logo">Favorite Movies Club</div>
+    <div class="desc">THis is my first project and this is essentially a place to find your favorite movies and rate them as well.</div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="username" class="form-control" [(ngModel)]="username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+          </div>
+
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
