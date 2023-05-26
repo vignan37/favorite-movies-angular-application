@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 
 @Component({
@@ -10,12 +11,26 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   
   trendingMovies!:any;
+  theatreMovies!:any;
+  popularMovies!:any;
 
-  constructor(private http: HttpClient ){
+  constructor(private http: HttpClient, private router:Router ){
     this.getTrendingMovies();
+    this.getTheatreMovies();
+    this.getPopularMovies();
 
   }
   getTrendingMovies(){
     this.http.get('http://localhost:4200/assets/data/trending-movies.json').subscribe((movies) => { this.trendingMovies = movies})
+  }
+  getTheatreMovies(){
+    this.http.get('http://localhost:4200/assets/data/theatre-movies.json').subscribe((movies) => { this.theatreMovies = movies})
+  }
+  getPopularMovies(){
+    this.http.get('http://localhost:4200/assets/data/popular-movies.json').subscribe((movies) => { this.popularMovies = movies})
+  }
+  
+  goToMovie(type: string, id: string) {
+    this.router.navigate(['movie', type, id]);
   }
 }
