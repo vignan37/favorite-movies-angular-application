@@ -12,6 +12,7 @@ export class HomeComponent {
   trendingMovies!:any;
 
   constructor(private http: HttpClient ){
+    this.getTrendingMovies();
 
   }
   getTrendingMovies(){
