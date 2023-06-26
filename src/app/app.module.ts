@@ -33,7 +33,7 @@ import { list } from '@angular/fire/database';
     AppRoutingModule,
     FormsModule,
     NgbModule,
-    FeatureModule,
+    FeatureModule
     //AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
