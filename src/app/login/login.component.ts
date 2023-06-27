@@ -14,7 +14,7 @@ export class LoginComponent {
   errorMsg:string="";
 
   constructor(private router:Router, private auth:AuthService){
-
+    console.log('login comp loaded');
   }
 
   login(){

@@ -14,9 +14,12 @@ export class MovieComponent {
   movies: any;
   movie: any;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient) {
+    console.log('movie comp loaded');
+  }
 
   ngOnInit(): void {
+    console.log('movie comp loaded');
     this.type = this.route.snapshot.params['type'];
     this.id = this.route.snapshot.params['id'];
     if (this.type === 'trending') {

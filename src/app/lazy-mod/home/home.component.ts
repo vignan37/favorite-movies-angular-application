@@ -17,6 +17,8 @@ export class HomeComponent {
     this.getTrendingMovies();
     this.getTheatreMovies();
     this.getPopularMovies();
+    
+    console.log('Home comp loaded');
 
   }
   getTrendingMovies(){
