@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
-import { MovieComponent } from './movie/movie.component';
+import { HomeComponent } from './lazy-mod/home/home.component';
+import { MovieComponent } from './lazy-mod/movie/movie.component';
+import { LazyModModule } from './lazy-mod/lazy-mod.module';
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full'},
@@ -13,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), LazyModModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
