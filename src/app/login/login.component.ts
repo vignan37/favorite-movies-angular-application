@@ -31,7 +31,7 @@ export class LoginComponent {
         this.router.navigate(['home']);
       }
       else{
-        this.errorMsg="Username & Password doesnt match";
+        this.errorMsg="Username & Password doesn't exist, you can use U:'vignan' P:123 ";
       }
     }
 }
