@@ -1,4 +1,4 @@
-This project is hosted on Firebase : https://favorite-movies-angular-app.web.app/#/home
+This project is hosted on Firebase : https://favorite-movies-angular-app.web.app/#/login
 
 # FavoriteMoviesAngular
 
