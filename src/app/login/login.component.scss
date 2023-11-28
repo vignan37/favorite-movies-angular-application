@@ -1,48 +1,54 @@
 .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
-    background: yellow;
+    background: black;
     position: relative;
     .logo {
-      font-size: 70px;
+      font-size: 7vw;
       font-weight: bold;
       font-family: 'Creepster', cursive;
       letter-spacing: 10px;
-      position: absolute;
-      top: 50px;
-      left: 450px;
+      text-align: center;
+      padding-top: 3%;
+      color: gray;
     }
 }
 .desc{
-    font-size: 34px;
+    font-size: 2.5vw;
     letter-spacing: 5px;
-    position: absolute;
-    top: 200px;
-    left: 250px;
     text-align: center;
-    width: 1200px;
+    color: gray;
+}
+h2 {
+  color: gray;
+  text-align: center;
+  margin-top: 3%;
 }
 .login-form {
-    width: 500px;
-    height: 300px;
-    padding: 20px;
+    margin-top: 2%;
     background-color: #fff;
     border-radius: 10px;
-    position: absolute;
-    bottom: 250px;
-    left: 700px;
+    padding: 3%;
+    max-width: fit-content;
     box-shadow: 5px 5px 20px #383838;
+    text-align: center;
+    align-content: center;
 }
 .form-group {
-    margin-top: 3%;
-    margin-left: 30%;
+    margin-top: 1%;
+    padding-top: 1%;
   }
 
 .btn-container {
     position: relative;
+    align-content: center;
+    margin-top: 10%;
     .btn {
-      margin-top: 30px;
-      margin-left: 40%;
+      text-align: center;
     }
     .error {
       position: absolute;
