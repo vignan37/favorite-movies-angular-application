@@ -1,3 +1,5 @@
+This project is hosted on Firebase : https://favorite-movies-angular-app.web.app/#/home
+
 # FavoriteMoviesAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
